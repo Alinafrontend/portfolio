@@ -1,0 +1,207 @@
+@media(max-width:1250px){
+    .header-fixed {
+        padding: 40px 10px;
+    }
+
+    .hero {
+        padding: 111px 10px 145px;
+    }
+
+    .services {
+        padding: 115px 10px 185px 10px;
+    }
+
+    .portfolio {
+        padding: 105px 10px 175px 10px;
+    }
+
+    .experiences {
+        padding: 104px 10px 111px 10px;
+    }
+
+    .experiences-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .blog {
+        padding: 145px 10px 125px 10px;
+    }
+
+    .testimonials {
+        padding: 104px 10px 103px 10px;
+    }
+
+    .education {
+        padding: 105px 10px 175px 10px;
+    }
+
+    .education-wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .contact {
+        padding: 104px 10px 134px 10px;
+    }
+
+    .contact-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:980px){
+    .hero-wrapper {
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+@media(max-width:850px){
+    .hide{
+        overflow-y: hidden;
+    }
+    .nav {
+        position: absolute;
+        z-index: 2;
+        background: var(--bg-white);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        transition: 0.4s ease-in-out;
+    }
+
+    .nav.active{
+        left: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .burger{
+        display: block;
+        width: 40px;
+        height: 50px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .burger-icon,
+    .burger-close{
+        fill: var(--color-primary);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .burger-icon.active,
+    .burger-close.active{
+        opacity: 1;
+    }
+
+    .dark .nav{
+        background: var(--bg-dark);
+    }
+
+    .dark .burger-icon,
+    .dark .burger-close{
+        fill: var(--color-white);
+    }
+
+    .experiences-tabs {
+        width: 90%;
+    }
+}
+
+@media(max-width:768px){
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media(max-width:590px){
+    .header{
+        height: 154px;
+    }
+    .header-fixed {
+        padding: 20px 10px;
+    }
+
+    .header-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-logo {
+        flex-direction: column;
+        width: 50px;
+        height: 114px;
+        justify-content: space-evenly;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .education-content {
+        width: 100%;
+    }
+}
+
+@media(max-width:450px){
+    .hero-block, .hero-img{
+        width: 100%;
+    }
+
+    .hero-img::before{
+        display: none;
+    }
+
+    .services-block {
+        width: 100%;
+    }
+
+    .slider-wrapper {
+        width: 100%;
+    }
+
+    .slider-wrapper img{
+        margin: 0 auto;
+    }
+
+    .blog-wrapper {
+        width: 100%;
+    }
+
+    .blog-wrapper img{
+        margin: 0 auto;
+    }
+
+    .testimonials-wrapper {
+        width: 100%;
+    }
+
+    .testimonials-slider {
+        padding-top: 110px;
+    }
+
+    .education-list {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+}
